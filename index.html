@@ -10,29 +10,30 @@
 
 :root {
   /* Apollonia Brand Kit */
-  --gold: #e2cf7a;
-  --gold-dark: #87793c;
-  --navy: #27356e;
-  --navy-deep: #1a2450;
-  --navy-darkest: #111b3a;
-  --cream: #efe4b6;
-  --blue: #3372bc;
+  --orange: #FE8635;
+  --orange-dark: #C66A28;
+  --orange-light: #FFB37D;
+  --ink: #202A30;
+  --ink-deep: #181F25;
+  --ink-darkest: #10171C;
+  --cream: #FBF9F1;
+  --grey: #D3D3D3;
 
-  --bg: #0c1225;
-  --surface: #111938;
-  --surface-2: #162044;
-  --border: rgba(226,207,122,0.08);
-  --border-active: rgba(226,207,122,0.18);
-  --text: #efe4b6;
-  --text-dim: #8a8fa8;
-  --text-muted: #4a5278;
-  --accent: #e2cf7a;
-  --accent-dim: rgba(226,207,122,0.15);
-  --accent-glow: rgba(226,207,122,0.1);
-  --phase1: #e2cf7a;
-  --phase2: #6ba8d6;
-  --phase3: #3372bc;
-  --phase4: #d4b85a;
+  --bg: #202A30;
+  --surface: #2A3640;
+  --surface-2: #34424D;
+  --border: rgba(254,134,53,0.12);
+  --border-active: rgba(254,134,53,0.25);
+  --text: #FBF9F1;
+  --text-dim: #C5C0B3;
+  --text-muted: #6C7178;
+  --accent: #FE8635;
+  --accent-dim: rgba(254,134,53,0.15);
+  --accent-glow: rgba(254,134,53,0.1);
+  --phase1: #FE8635;
+  --phase2: #FFB37D;
+  --phase3: #FBF9F1;
+  --phase4: #D3D3D3;
   --heading: 'Inter', system-ui, sans-serif;
   --sans: 'Inter', system-ui, sans-serif;
   --mono: 'JetBrains Mono', monospace;
@@ -41,7 +42,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background: linear-gradient(180deg, #0c1225 0%, #0f1630 50%, #0c1225 100%);
+  background: linear-gradient(180deg, #202A30 0%, #2A3640 50%, #202A30 100%);
   color: var(--text);
   font-family: var(--sans);
   line-height: 1.6;
@@ -301,10 +302,10 @@ section {
   font-weight: 600;
 }
 
-.phase[data-phase="1"] .phase-tag { color: var(--phase1); background: rgba(226,207,122,0.1); border: 1px solid rgba(226,207,122,0.2); }
-.phase[data-phase="2"] .phase-tag { color: var(--phase2); background: rgba(107,168,214,0.1); border: 1px solid rgba(107,168,214,0.2); }
-.phase[data-phase="3"] .phase-tag { color: var(--phase3); background: rgba(51,114,188,0.1); border: 1px solid rgba(51,114,188,0.2); }
-.phase[data-phase="4"] .phase-tag { color: var(--phase4); background: rgba(212,184,90,0.1); border: 1px solid rgba(212,184,90,0.2); }
+.phase[data-phase="1"] .phase-tag { color: var(--phase1); background: rgba(254,134,53,0.1); border: 1px solid rgba(254,134,53,0.2); }
+.phase[data-phase="2"] .phase-tag { color: var(--phase2); background: rgba(255,179,125,0.1); border: 1px solid rgba(255,179,125,0.2); }
+.phase[data-phase="3"] .phase-tag { color: var(--phase3); background: rgba(251,249,241,0.1); border: 1px solid rgba(251,249,241,0.2); }
+.phase[data-phase="4"] .phase-tag { color: var(--phase4); background: rgba(211,211,211,0.1); border: 1px solid rgba(211,211,211,0.2); }
 
 .phase-timing {
   font-family: var(--mono);
@@ -321,7 +322,7 @@ section {
   border-radius: 4px;
 }
 
-.status-live { color: #7eb8a0; background: rgba(107,168,214,0.12); }
+.status-live { color: #FBF9F1; background: rgba(255,179,125,0.12); }
 .status-next { color: var(--accent); background: var(--accent-dim); }
 .status-planned { color: var(--text-muted); background: rgba(255,255,255,0.04); }
 
@@ -476,10 +477,10 @@ section {
   font-weight: 300;
 }
 
-.revenue-bar:nth-child(1) .rev-fill { background: rgba(226,207,122,0.15); width: 100%; }
-.revenue-bar:nth-child(2) .rev-fill { background: rgba(107,168,214,0.15); width: 85%; }
-.revenue-bar:nth-child(3) .rev-fill { background: rgba(51,114,188,0.15); width: 70%; }
-.revenue-bar:nth-child(4) .rev-fill { background: rgba(212,184,90,0.15); width: 55%; }
+.revenue-bar:nth-child(1) .rev-fill { background: rgba(254,134,53,0.15); width: 100%; }
+.revenue-bar:nth-child(2) .rev-fill { background: rgba(255,179,125,0.15); width: 85%; }
+.revenue-bar:nth-child(3) .rev-fill { background: rgba(251,249,241,0.15); width: 70%; }
+.revenue-bar:nth-child(4) .rev-fill { background: rgba(211,211,211,0.15); width: 55%; }
 
 /* ─── FOOTER ─── */
 footer {
@@ -515,8 +516,8 @@ footer .footer-logotype {
   text-transform: uppercase;
   padding: 0.45rem 1rem;
   border-radius: 100px;
-  border: 1px solid rgba(226,207,122,0.3);
-  background: rgba(226,207,122,0.08);
+  border: 1px solid rgba(254,134,53,0.3);
+  background: rgba(254,134,53,0.08);
   color: var(--accent);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -526,19 +527,19 @@ footer .footer-logotype {
 }
 
 .demo-btn:hover {
-  background: rgba(226,207,122,0.18);
-  border-color: rgba(226,207,122,0.5);
+  background: rgba(254,134,53,0.18);
+  border-color: rgba(254,134,53,0.5);
   transform: translateY(-1px);
 }
 
 .demo-btn-vision {
-  border-color: rgba(212,184,90,0.3);
-  background: rgba(212,184,90,0.08);
+  border-color: rgba(211,211,211,0.3);
+  background: rgba(211,211,211,0.08);
 }
 
 .demo-btn-vision:hover {
-  background: rgba(212,184,90,0.18);
-  border-color: rgba(212,184,90,0.5);
+  background: rgba(211,211,211,0.18);
+  border-color: rgba(211,211,211,0.5);
 }
 
 /* ─── VIDEO MODAL ─── */
@@ -568,7 +569,7 @@ footer .footer-logotype {
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--border-active);
-  background: #000;
+  background: #202A30;
 }
 
 .video-modal iframe {
@@ -585,7 +586,7 @@ footer .footer-logotype {
   font-size: 0.75rem;
   color: var(--text-dim);
   background: none;
-  border: 1px solid rgba(226,207,122,0.2);
+  border: 1px solid rgba(254,134,53,0.2);
   border-radius: 100px;
   padding: 0.35rem 0.9rem;
   cursor: pointer;
@@ -595,7 +596,7 @@ footer .footer-logotype {
 
 .video-modal-close:hover {
   color: var(--accent);
-  border-color: rgba(226,207,122,0.5);
+  border-color: rgba(254,134,53,0.5);
 }
 
 /* ─── ANIMATIONS ─── */
@@ -650,22 +651,22 @@ footer .footer-logotype {
 
 .tam-ring.outer {
   width: 280px; height: 280px;
-  border-color: rgba(212,184,90,0.3);
-  background: rgba(212,184,90,0.03);
+  border-color: rgba(211,211,211,0.3);
+  background: rgba(211,211,211,0.03);
   top: 0; left: 0;
 }
 
 .tam-ring.mid {
   width: 190px; height: 190px;
-  border-color: rgba(51,114,188,0.3);
-  background: rgba(51,114,188,0.05);
+  border-color: rgba(251,249,241,0.3);
+  background: rgba(251,249,241,0.05);
   top: 45px; left: 45px;
 }
 
 .tam-ring.inner {
   width: 110px; height: 110px;
-  border-color: rgba(226,207,122,0.4);
-  background: rgba(226,207,122,0.08);
+  border-color: rgba(254,134,53,0.4);
+  background: rgba(254,134,53,0.08);
   top: 85px; left: 85px;
 }
 
@@ -731,7 +732,7 @@ footer .footer-logotype {
 <!-- ─── ROADMAP ─── -->
 <section>
   <div class="reveal">
-    <div class="section-label">03 · Product Roadmap</div>
+    <div class="section-label">01 · Product Roadmap</div>
     <div class="section-title">Four phases to the full vision</div>
     <div class="section-desc">Each phase is commercially viable on its own while building the infrastructure, data moat, and market positioning required for the next.</div>
   </div>
@@ -918,7 +919,7 @@ footer .footer-logotype {
 <!-- ─── STRATEGIC MOAT ─── -->
 <section>
   <div class="reveal">
-    <div class="section-label">04 · Strategic Moat</div>
+    <div class="section-label">02 · Strategic Moat</div>
     <div class="section-title">Why this compounds</div>
     <div class="section-desc">Each phase creates defensibility that makes the next phase harder to replicate. By Phase 4, the moat is structural.</div>
   </div>
@@ -961,7 +962,7 @@ footer .footer-logotype {
 <!-- ─── REVENUE MODEL ─── -->
 <section>
   <div class="reveal">
-    <div class="section-label">05 · Revenue Architecture</div>
+    <div class="section-label">03 · Revenue Architecture</div>
     <div class="section-title">Layered revenue that grows with each phase</div>
     <div class="section-desc">Hardware margins fund software development. Software creates recurring revenue. Each phase adds a new revenue layer without cannibalising the last.</div>
   </div>
