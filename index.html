@@ -385,6 +385,43 @@ section {
   line-height: 1.55;
 }
 
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  max-width: 720px;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.75;
+}
+
+.feature-list li strong {
+  color: #fff;
+  font-weight: 500;
+  margin-right: 0.4rem;
+}
+
 /* ─── STRATEGIC MOAT ─── */
 .moat-row {
   display: grid;
@@ -751,38 +788,14 @@ footer .footer-logotype {
       </div>
       <h2>Apollonia Camera <button class="demo-btn" onclick="openVideoModal()">▶ View Demo</button></h2>
       <p class="phase-subtitle">The world's first purpose-built clinical camera for dental professionals. Mounts to existing loupes or safety glasses. Captures first-person 4K video with zero workflow disruption.</p>
-      <div class="feature-grid">
-        <div class="feature-item">
-          <div class="feat-icon">◇</div>
-          <h4>38g Ultra-Light</h4>
-          <p>Lighter than a AAA battery. Mounts to any existing loupes or frames without fatigue.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feat-icon">◎</div>
-          <h4>4K @ 30fps</h4>
-          <p>Clinical-grade video with enough resolution for diagnostics, case review, and patient education.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feat-icon">☼</div>
-          <h4>Built-in LED</h4>
-          <p>Integrated illumination ensures consistent lighting in the oral cavity without external light sources.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feat-icon">⊘</div>
-          <h4>Hands-Free Control</h4>
-          <p>Foot pedal operation keeps clinical workflow sterile and uninterrupted. Start, stop, snapshot. No hands required.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feat-icon">▣</div>
-          <h4>Live Display</h4>
-          <p>Real-time feed to a chairside display for patient communication and team visibility during procedures.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feat-icon">⊙</div>
-          <h4>POV Capture</h4>
-          <p>First-person perspective means the camera sees exactly what the clinician sees. True clinical documentation.</p>
-        </div>
-      </div>
+      <ul class="feature-list">
+        <li><strong>38g ultra-light.</strong> Lighter than a AAA battery. Mounts to any existing loupes or frames without fatigue.</li>
+        <li><strong>4K @ 30fps.</strong> Clinical-grade video with enough resolution for diagnostics, case review, and patient education.</li>
+        <li><strong>Built-in LED.</strong> Integrated illumination ensures consistent lighting in the oral cavity without external light sources.</li>
+        <li><strong>Hands-free control.</strong> Foot pedal operation keeps clinical workflow sterile and uninterrupted. Start, stop, snapshot. No hands required.</li>
+        <li><strong>Live display.</strong> Real-time feed to a chairside display for patient communication and team visibility during procedures.</li>
+        <li><strong>POV capture.</strong> First-person perspective means the camera sees exactly what the clinician sees. True clinical documentation.</li>
+      </ul>
     </div>
 
     <!-- PHASE 2 -->
@@ -795,38 +808,14 @@ footer .footer-logotype {
       </div>
       <h2>Apollonia Studio + AI</h2>
       <p class="phase-subtitle">A browser-based cloud platform that turns raw clinical footage into structured, searchable, AI-enriched content. Voice commands on the hardware begin transforming the camera from a recording device into an intelligent clinical assistant.</p>
-      <div class="feature-grid">
-        <div class="feature-item">
-          <div class="feat-icon">△</div>
-          <h4>Cloud Storage</h4>
-          <p>Secure, HIPAA-aligned clinical video storage with automatic sync from device. No more SD cards or manual file management.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feat-icon">⧫</div>
-          <h4>Native Video Editing</h4>
-          <p>In-browser trimming, splicing, annotation, and export. Purpose-built for clinical workflows, not repurposed consumer tools.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feat-icon">◈</div>
-          <h4>Voice Commands</h4>
-          <p>Hardware-level voice control. "Apollonia, start recording", "take photo", "bookmark". Hands and feet stay free.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feat-icon">⬡</div>
-          <h4>AI Contextual Awareness</h4>
-          <p>The camera begins to understand what it's seeing. Procedure recognition, auto-tagging, and intelligent capture go beyond passive recording.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feat-icon">▤</div>
-          <h4>Dental Scribe Integration</h4>
-          <p>AI-powered clinical documentation that generates notes from video and voice. The beginning of automated charting.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feat-icon">↗</div>
-          <h4>Export & Share</h4>
-          <p>One-click export for patient education, referral letters, insurance claims, and social media content creation.</p>
-        </div>
-      </div>
+      <ul class="feature-list">
+        <li><strong>Cloud storage.</strong> Secure, HIPAA-aligned clinical video storage with automatic sync from device. No more SD cards or manual file management.</li>
+        <li><strong>Native video editing.</strong> In-browser trimming, splicing, annotation, and export. Purpose-built for clinical workflows, not repurposed consumer tools.</li>
+        <li><strong>Voice commands.</strong> Hardware-level voice control. "Apollonia, start recording", "take photo", "bookmark". Hands and feet stay free.</li>
+        <li><strong>AI contextual awareness.</strong> The camera begins to understand what it's seeing. Procedure recognition, auto-tagging, and intelligent capture go beyond passive recording.</li>
+        <li><strong>Dental Scribe integration.</strong> AI-powered clinical documentation that generates notes from video and voice. The beginning of automated charting.</li>
+        <li><strong>Export & share.</strong> One-click export for patient education, referral letters, insurance claims, and social media content creation.</li>
+      </ul>
     </div>
 
     <!-- PHASE 3 -->
