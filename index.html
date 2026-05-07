@@ -767,7 +767,7 @@ footer .footer-logotype {
         <span class="phase-timing">Now · H2 2026</span>
         <span class="phase-status status-live">● Live</span>
       </div>
-      <h2>Apollonia Camera <button class="demo-btn" onclick="openVideoModal()">▶ View Demo</button></h2>
+      <h2>Apollonia Camera <button class="demo-btn" onclick="openVideoModal('1V72jREvuz6CAKfnr0gqKcA9pa1n1CGm8')">▶ View Demo</button> <button class="demo-btn" onclick="openVideoModal('1idt9UXSVK2U4862KjBt0QdwV4ib-iRCm')">▶ View Mount</button></h2>
       <p class="phase-subtitle">The world's first purpose-built clinical camera for dental professionals. Mounts to existing loupes or safety glasses. Captures first-person 4K video with zero workflow disruption.</p>
       <ul class="feature-list">
         <li><strong>38g ultra-light.</strong> Mounts to any existing loupes or frames without fatigue.</li>
@@ -919,10 +919,10 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // Video modal
-function openVideoModal() {
+function openVideoModal(videoId = '1V72jREvuz6CAKfnr0gqKcA9pa1n1CGm8') {
   const overlay = document.getElementById('videoModalOverlay');
   const iframe = document.getElementById('videoModalIframe');
-  iframe.src = 'https://drive.google.com/file/d/1V72jREvuz6CAKfnr0gqKcA9pa1n1CGm8/preview';
+  iframe.src = `https://drive.google.com/file/d/${videoId}/preview`;
   overlay.classList.add('active');
 }
 
